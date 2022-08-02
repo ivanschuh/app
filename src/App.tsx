@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+//design
+import 'antd/dist/antd.css';
+import { UserOutlined } from '@ant-design/icons';
+import { Avatar } from 'antd';
+
+const App = () => (
+    <div className="background">
+      <header className="header">
+          <Avatar size={64} icon={<UserOutlined />} />
       </header>
     </div>
-  );
-}
+);
 
 export default App;
